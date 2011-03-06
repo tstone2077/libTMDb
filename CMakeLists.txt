@@ -5,12 +5,17 @@ PROJECT (TMDb)
 SET (CLIENT_BINARY_NAME "TMDb")
 
 SET (SOURCES
-  "main.cpp"
+  "src/libTMDb.cpp"
+  "src/Movie.cpp"
+  )
+INCLUDE_DIRECTORIES(
+  "inc"
+  "sckt"
+  "tinyxml"
   )
 
 ADD_SUBDIRECTORY(sckt)
 ADD_SUBDIRECTORY(tinyxml)
-ADD_SUBDIRECTORY(tinybind)
 # set the generated executable path
 SET (CMAKE_RUNTIME_OUTPUT_DIRECTORY "bin")
 SET (CMAKE_LIBRARY_OUTPUT_DIRECTORY "lib")

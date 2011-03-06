@@ -27,7 +27,7 @@ THE SOFTWARE. */
 //          cross platfrom C++ Sockets wrapper
 //
 
-#include "sckt.hpp"
+#include "sckt.h"
 
 //system specific defines, typedefs and includes
 #ifdef __WIN32__
